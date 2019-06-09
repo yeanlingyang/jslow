@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /* 使用 rem 布局, 由于是等比例缩放的, 所以可以直接适配 640px 的屏幕, 不用考虑二倍图 */
+
+    /* 320 360 375 400 414 420 480 */
+    @media (min-width: 320px) {
+      html {
+        font-size: 50px;
+      }
+    }
+    @media (min-width: 360px) {
+      html {
+        font-size: 56.25px;
+      }
+    }
+    @media (min-width: 375px) {
+      html {
+        font-size: 58.59375px;
+      }
+    }
+    @media (min-width: 400px) {
+      html {
+        font-size: 62.5px;
+      }
+    }
+    @media (min-width: 414px) {
+      html {
+        font-size: 64.6875px;
+      }
+    }
+    @media (min-width: 420px) {
+      html {
+        font-size: 65.625px;
+      }
+    }
+    @media (min-width: 640px) {
+      html {
+        font-size: 100px;
+      }
+    }
+    div {
+      width: 2rem;
+      height: 2rem;
+      font-size: .4rem;
+      background-color: pink;
+    }
+    p {
+      width: 1rem;
+      height: 1rem;
+      background-color: blue;
+    }
+  </style>
+</head>
+<body>
+  <!-- rem 就是一个单位, 相对于html font-size 计算
+       rem 布局原理: 让越小屏幕 html font-size 越小, 越大的屏幕html font-size 越大
+
+       需求: 640px 的设计图  量出了 200px * 200px 的盒子, 字体大小 40px
+
+       从设计图中量出了一个 100px * 100px 的 一个 p 标签
+
+       使用rem的布局步骤:
+          1. 直接适配设计图的屏幕, 自定义一个 html font-size, 求得一个比例
+          2. 根据比例, 让不同屏幕, 设置不同的 html font-size
+          3. 从设计图中量出px的尺寸, 需要转换成 rem
+  -->
+  <div>文字</div>
+
+  <p></p>
+  
+</body>
+</html>

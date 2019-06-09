@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+<script>
+  // 变量: 就是可以变化的量,  作用: 存储数据  为了将来可以运算使用
+  // 声明 和 赋值    关键字: var
+  // var age = 18;
+  // age = age + 1;
+  // console.log(age);
+
+  // 1. 先声明, 后赋值
+  var age;
+  age = 18;
+
+  // 2. 同时声明 和 赋值
+  var age1 = 20;
+  console.log(age1);
+
+  // 3. 只声明, 不赋值   undefined 未定义, 只要变量声明了但是未赋值, 默认值就是 undefined
+  var age2;
+  console.log(age2);
+
+  // 4. 不声明, 直接赋值  虽然浏览器忍了, 但是不推荐, 变量一定要声明了, 再使用
+  age3 = 30;
+  console.log(age3);
+
+  // 5. 不声明, 不赋值, 直接用,  xxx is not defined  一定是没有声明赋值的变量直接用了, 会报错
+  // console.log(age4);
+
+  // 6. 可以同时声明赋值多个变量  (本质上, 只是省略了 var)
+  // var a, b;
+  // var a = 10, b = 20;
+  var a, b = 20;
+  console.log(a);  // undefined
+  console.log(b);  // 20
+
+
+  
+</script>
+
+</body>
+</html>
