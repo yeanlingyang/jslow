@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  
+  // 月底了, 发工资了, 请输入你的工资, 额外发一个满勤奖 200
+  // var money = prompt('请输入你的工资');  // 可以接收到用户输入的内容
+  // money = Number(money);
+  // money += 200;
+  // console.log(money);
+
+  // 将来工作中, 拿到的是字符串, 但是要进行运算, 需要转成数字!!!
+  // (1) Number(xxx);     如果拿到的是一个非数字, 浏览器也不会报错, 返回 NaN, not a number
+  // (2) parseInt(xxx);   从第一个字符开始解析, 一直解析到第一个非数字为止
+  // (3) parseFloat(xxx); 从第一个字符开始解析, 可以识别一个 .  解析到非数字为止
+  // (4) 直接运算   age*1  age/1  age-0
+  //     +age 用的最多
+
+
+  // var age = '18.111';
+  // console.log(Number(age));   // 18.111
+  // console.log(parseInt(age)); // 18
+  // console.log(parseFloat(age));  // 18.111
+
+  // var age = '18.333.6666';
+  // console.log(Number(age));   // 非数字, NaN
+  // console.log(parseInt(age)); // 18
+  // console.log(parseFloat(age));  // 18.333
+
+
+  // + 可以运算, 也可以拼串, 只有两边都是数字, 才是运算
+  // - * / %  只能运算, 所以就算遇到字符串, 也会转成数字
+  // +正号,  +100
+  // -负号,  -100
+
+  // console.log('111' - 0);
+  // console.log('111' * 1);
+  // console.log('111' / 1);
+
+  // var age = '18';
+  // console.log(+age);
+
+
+  // var money = +prompt('请输入你的工资');
+  // console.log(money + 200);
+  
+  
+</script>
+  
+</body>
+</html>

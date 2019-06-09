@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // switch.. case..  根据变量的具体值, 进行判断
+    /* 
+      switch (变量) {
+        case 值1:
+          语句1;
+          break;
+        case 值2:
+          语句2;
+          break;
+        case 值3:
+          语句3;
+          break;
+        default:
+          默认语句;
+      }
+  
+      break表示跳出switch, 接着往下执行
+      判断变量的值
+        如果值, 等于值1, 执行语句1
+        如果值, 等于值2, 执行语句2
+        ...
+        如果都不满足, 执行默认语句
+
+      注意点:
+        1. 进行的值的比较, 进行的是全等比较
+        2. 养成写break的习惯, 不写break, 会一直往下执行
+    */
+
+    // 练习: 请输入一个数字 0-6 之间,  0表示周日, 1表示周1, 2表示周2, .....
+    var num = +prompt('请输入一个数字0-6之间');
+
+    switch (num) {
+      case 0:
+        console.log('周日');
+        break;
+      case 1:
+        console.log('周1');
+        break;
+      case 2:
+        console.log('周2');
+        break;
+      case 3:
+        console.log('周3');
+        break;
+      case 4:
+        console.log('周4');
+        break;
+      case 5:
+        console.log('周5');
+        break;
+      case 6:
+        console.log('周6');
+        break;
+      default:
+        console.log('大兄弟, 你是火星来的吧');
+    }
+
+    console.log('呵呵呵');
+
+
+  </script>
+
+</body>
+
+</html>

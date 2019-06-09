@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  
+  // 如果浏览器遇到了一个无法用数字表示的数值, 就用 NaN 表示  
+  // 将来大家开发, 只要看到了 NaN, 说明代码的执行有问题
+
+  // NaN : 表示非数字, 指一个无法用数字表示的数字,  not a number
+  // (1) NaN 的类型是 number 类型
+  // (2) NaN 不等于任何值, 包括他自己 (六亲不认)
+  console.log( 'abc' * 2 );   // NaN
+  console.log(typeof NaN); // number
+
+  console.log(NaN === 2); // false
+
+  // 'abc' * 2  === 'bcd' * 2
+  console.log(NaN === NaN); // false
+  
+</script>
+  
+</body>
+</html>

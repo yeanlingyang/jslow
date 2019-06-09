@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+  // 三元, 三个值参与运算, 三元运算符, 只适用于比较简单的判断, 可以更加简洁
+  // 语法:        
+  // var 结果 = 条件 ? A : B;
+  // 如果条件满足, 就是 A 否则 B
+
+
+  // 思考1：求两个数的最小值
+  // var num1 = 88;
+  // var num2 = 22;
+  // var min = num1 < num2 ? num1 : num2;
+  // console.log(min);
+
+
+  // 思考2：判断成年还是未成年
+  // var age = 2;
+  // var result = age >= 18 ? '成年' : '未成年';
+  // console.log(result);
+
+
+  // 思考3：求三个数的最小值  (两两比较)
+  var num1 = 181;
+  var num2 = 22;
+  var num3 = 33;
+
+  var min = num1 < num2 ? num1 : num2;  // 求 num1 和 num2 中的最小值
+
+  // 让 min 和 num3 比较
+  min = min < num3 ? min : num3;
+
+  console.log(min);
+
+  
+  
+</script>
+</body>
+</html>

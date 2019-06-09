@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 输入自己的考试成绩     范围性的判断, 比较适合 if else
+    // 90-100 A
+    // 80-89  B
+    // 70-79  C
+    // 60-69  D
+    // 0-59   E
+
+    // var score = +prompt('请输入你的考试成绩');
+    // score = score / 10;
+    // score = parseInt(score); // 去掉小数点的部分  10 9 8 7 6 ... 3 2 1 0
+
+    // switch (score) {
+    //   case 10:
+    //     console.log('A');
+    //     break;
+    //   case 9:
+    //     console.log('A');
+    //     break;
+    //   case 8:
+    //     console.log('B');
+    //     break;
+    //   case 7:
+    //     console.log('C');
+    //     break;
+    //   case 6:
+    //     console.log('D');
+    //     break;
+    //   default:
+    //     console.log('E');
+    // }
+
+
+
+    // 1. switch case 中进行的是全等比较
+    // 2. 要养成写 break 的习惯
+    //测试题：
+    var num = 20;
+    switch (num) {
+      case 10:
+        console.log("10");
+        break;
+      case 20:
+        console.log("20");
+        break;
+      case 30:
+        console.log("30");
+        break;
+      default:
+        console.log("lalala");
+    }
+
+
+
+
+
+  </script>
+
+</body>
+
+</html>
