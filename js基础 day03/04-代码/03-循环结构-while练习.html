@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+
+
+  // 1. 计算 1-100之间 所有偶数的和  
+  // var i = 1;
+  // var sum = 0;
+  // while(i <= 100) {
+  //   if (i % 2 === 0) {
+  //     sum += i;
+  //   }
+  //   i++;
+  // }
+  // console.log(sum);
+
+  // 2. 循环表白案例    while 循环可以用于实现 不明确 循环次数的 循环!!!!
+  //    弹出一个confirm确认框, 问: 你爱我嘛 y/n
+  //    如果你敢选 n, 我就接着问!!! 问到你 y 为止..
+
+  // var result = confirm('你爱我嘛 y/n');   // 用户选择了确认, 结果就是true, 否则false
+  // while (result === false) {
+  //   // 每次问完后, 更新result结果
+  //   result = confirm('你爱我嘛 y/n');
+  // }
+  // alert('哈哈, 我也很爱我自己');
+
+
+  // 3. 循环登陆案例
+  //    弹出一个输入框, 问: 老铁, 你的账号是啥?
+  //    只有输入了 admin, 才登陆通过, 否则, 一直问
+  var account = prompt('老铁, 你的账号是啥');
+
+  while(account != 'admin') {
+    account = prompt('老铁, 你的账号是啥');
+  }
+
+  alert('恭喜, 登陆成功');
+
+
+
+</script>
+</body>
+</html>

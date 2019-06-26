@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 页面中打印一个五角星 ★
+  // document.write('★');
+
+
+  // 打印一行9个五角星  1-9
+  // for (var i = 1; i <= 9; i++) {
+  //   document.write('★ ');
+  // }
+  // document.write('<br>');
+
+
+  // 双重for循环, 就是在for循环的外面再套一个for循环
+  
+  // // 外层控制打印多少行
+  // for (var j = 1; j <= 9; j++) {
+  //   // 打印了一行9个五角星
+  //   for (var i = 1; i <= 9; i++) {
+  //     document.write('★ ');
+  //   }
+  //   document.write('<br>');
+  // }
+
+
+  // 1. 外层控制行数
+  // 2. 内层控制一行打印多少个五角星
+  for (var i = 1; i <= 9; i++) {
+    // 内层一行, 控制打印几颗
+    for (var j = 1; j <= i; j++) {
+      document.write('★ ');
+    }
+
+    document.write('<br>');
+  }
+
+
+</script>
+  
+</body>
+</html>

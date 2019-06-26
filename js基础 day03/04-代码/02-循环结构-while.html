@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+  // 需求: 请打印1-100
+  // 如果遇到了需要重复循环执行的事情, 此时就需要用到循环结构
+  // console.log(1);
+  // console.log(2);
+  // console.log(3);
+  // console.log(4);
+  // console.log(5);
+
+  /* 
+    while 当条件成立, 循环执行某件事
+    语法:
+      while(条件) {
+        循环体;  循环执行的内容
+      }
+      判断条件, 条件成立, 执行循环体
+      判断条件, 条件成立, 继续执行循环体
+      ...
+      条件不成立, 跳出循环
+  */
+
+  // 打印 1-5
+  // 死循环, 永远都没有结束的一个循环, 开发中需要避免
+  // 初学者:
+  // 1. while循环一定要有结束条件, 不然死循环了
+  // 2. i++ 一般放在 { .. } 的最后面
+  // var i = 1;
+  // while (i <= 5) {
+  //   console.log(i);
+  //   i++;
+  // }
+  // console.log('hello');
+
+
+
+  // 计算 1-100 所有数的和 while
+  var i = 1;
+  var sum = 0;
+  while (i <= 100) {
+    // 每次循环, 都将 i 的值, 加入到 sum 中
+    sum += i;
+    i++;
+  }
+  console.log(sum);
+
+</script>
+  
+</body>
+</html>

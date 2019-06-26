@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 1. 求1-100之间所有数的和、平均值
+  // var sum = 0;
+  // for (var i = 1; i <= 100; i++) {
+  //   sum += i;
+  // }
+  // console.log(sum);
+  // console.log(sum / 100);
+
+
+  // 2. 求1-100之间所有数的乘积
+  // var num = 1;
+  // for (var i = 1; i <= 100; i++) {
+  //   // num = num * i;
+  //   num *= i;
+  // }
+  // console.log(num);
+
+
+  // 3. 计算1-100之间能被3整除的数的和
+  var sum = 0;
+  for (var i = 1; i <= 100; i++) {
+    if (i % 3 === 0) {
+      // 确实被3整除
+      sum += i;
+    }
+  }
+  console.log(sum);
+
+</script>
+  
+</body>
+</html>

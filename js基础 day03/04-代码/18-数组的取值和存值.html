@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 数组的取值
+  // 语法: 数组名[下标]
+  // (1) 如果下标存在, 直接返回对应项的值
+  // (2) 如果下标不存在, 返回 undefined
+
+  // var arr = ['华佗', '周瑜', '黄盖', '吕布', '貂蝉', '赵云'];
+  // console.log(arr[0]);
+  // console.log(arr[1]);
+  // console.log(arr[100]);
+
+  // 获取数组的最后一项, 数组的下标的范围: 0-----> arr.length-1
+  // console.log(arr[ arr.length-1 ]);
+
+
+  // 数组的存值改值
+  // 语法: 数组名[下标] = '新的值';
+  // (1) 如果下标存在, 直接用新的值覆盖
+  // (2) 如果下标不存在, 新建一个项, 进行赋值
+
+  var arr = ['张飞', '吕布', '关羽'];
+  // arr[0] = '诸葛亮';
+  // arr[1] = '貂蝉';
+
+  // arr[100] = '许褚';   // 浪费空间
+
+  // 许褚想要住到最后一节去, 但是不想影响别人
+  arr[arr.length] = '许褚1';
+  arr[arr.length] = '许褚2';
+  console.log(arr);
+
+
+
+  // arr[arr.length-1]       最后一项
+  // arr[arr.length] = '值'; 在最后一项的后面再加一项
+
+
+
+</script>
+  
+</body>
+</html>
