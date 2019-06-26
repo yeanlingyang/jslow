@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  // 要求: 使用假设成立法
+  // 1. 需求: 判断这个数组是否全是偶数
+  // var arr = [2, 4, 6, 8, 10];
+
+  // // 假设全都是偶数
+  // var flag = true;
+
+  // // 找打脸的, 找奇数, 只要看到有奇数, 假设不成立
+  // for (var i = 0; i < arr.length; i++) {
+  //   if (arr[i] % 2 === 1) {
+  //     // 找到了奇数, 假设不成立
+  //     flag = false;
+  //     break;
+  //   }
+  // }
+
+  // console.log(flag);
+
+
+
+
+  // 2. 需求: 判断这个数组, 是否是有序的
+  var arr = [1, 3, 5, 7, 9];
+
+  // 假设已经从小到大排好序的, 前一项应该小于后一项
+  // 思路:
+  // (1) 遍历数组
+  // (2) 让 arr[i] 和 arr[i+1] 比较
+  // (3) 如果 arr[i] > arr[i+1], 假设不成立, 没排好
+  var flag = true; // 假设是有序的
+
+  for (var i = 0; i < arr.length-1; i++) {
+    if (arr[i] > arr[i+1]) {
+      // 没排好, 假设不成立
+      flag = false;
+      break;
+    }
+  }
+
+  console.log(flag);
+
+
+
+
+</script>
+  
+</body>
+</html>

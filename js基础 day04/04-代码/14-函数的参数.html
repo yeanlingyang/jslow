@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  
+  // 在函数中, 需要发生变化的值, 可以定义成函数的参数
+  /* 
+    函数的参数
+    1. 形参  函数在声明时, 函数名() 内的参数, 就是形参
+             形式参数, 形参默认没有值或者类型, 只在函数调用时, 形参才会有具体的值或者类型
+             作用: 占位置
+
+    2. 实参  函数调用时, 传递给函数的参数, 就叫实参
+             实际参数, 有具体的值或者类型
+             作用: 在函数调用时, 将数据传给形参
+
+    注意点: 形参和实参一一对应!!!
+
+    函数的声明和调用进阶写法
+      function 函数名(形参1, 形参2, ....) {
+        函数体;
+      }
+
+      函数名(实参1, 实参2, ....);
+  */
+
+
+  // 求两个数的和
+  // n1 和 n2 就是形参
+  function getSum(n1, n2) {
+    console.log(n1 + n2);
+  }
+
+  // 10 + 20
+  // 10  和  20 都是实参
+  getSum(10, 20);
+
+  // 100 + 200
+  getSum(100, 200);
+
+
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 1. 计算1-n之间所有数的和
+  //    函数中需要发生变化的值, 可以定义成形参
+  // function getSum(n) {
+  //   var sum = 0;
+  //   for (var i = 1; i <= n; i++) {
+  //     sum += i;
+  //   }
+  //   console.log(sum);
+  // }
+  // getSum(100);
+  // getSum(12);
+
+
+  // 2. 计算两个数的和
+  // function getSum(n1, n2) {
+  //   var sum = n1 + n2;
+  //   console.log(sum);
+  // }
+  // getSum(11, 173);
+
+
+  // 3. 计算m-n之间所有数的积
+  function getProduct(m, n) {
+    // 先计算1-10的乘积, 再封装
+    var product = 1;
+    for (var i = m; i <= n; i++) {
+      product *= i;
+    }
+    console.log(product);
+  }
+
+  getProduct(1, 10);
+  getProduct(4, 6);
+  
+</script>
+  
+</body>
+</html>

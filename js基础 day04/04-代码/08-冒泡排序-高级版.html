@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+    // 优化中级版: 每趟都可以比出一个最大值, 每趟可以少比一次
+    // 优化高级版: 
+    // (1) 如果数组, 默认已经排好序了, 其实后面就不用排了  
+    // (2) 如果数组, 排了一趟之后, 排好序了, 后面也不用排序了 ...
+    // (假设成立法)
+    
+    var arr = [1, 2, 3, 4, 5, 6, 7];   // 7个数
+    var count = 0;
+
+    // 外层 for 循环, 控制趟数, 7个数, 6趟即可
+    for (var j = 0; j < arr.length - 1; j++) {
+
+      // 在每一趟比较的前面, 假设这个数组已经排好序了
+      var flag = true;
+
+      // 一趟可以比出一个最大值
+      for (var i = 0; i < arr.length - 1 - j; i++) {
+        count++;
+
+        // 让 arr[i] 和 arr[i+1] 比较
+        if (arr[i] > arr[i + 1]) {
+          // 交换位置
+          var temp = arr[i];
+          arr[i] = arr[i + 1];
+          arr[i + 1] = temp;
+          // 只要发生了交换位置, 说明肯定没排好
+          flag = false;
+        }
+      }
+      
+      // flag false 说明发生了交换位置, 肯定没排好, 继续排下一趟
+      // flag true  说明一次交换都没有发生, 说明排好了, 后面的趟数不用排了
+      if (flag === true) {
+        // 排好了
+        break;
+      }
+    
+    }
+
+    console.log(arr);
+    console.log(count);
+
+  </script>
+
+</body>
+
+</html>

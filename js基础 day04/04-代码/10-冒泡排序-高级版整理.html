@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+  
+  // 初级版
+  // 1. 先排出一趟, 排出一个最大值
+  //    (1) 遍历数组
+  //    (2) 让 arr[i] 和 arr[i + 1] 比较
+  //    (3) 如果 arr[i] > arr[i + 1] 交换位置 
+  // 2. 双重for循环, 多排几趟, 就排好了
+
+  // 优化:
+  // (1) 中级版: 一趟可以比出一个最大值, 每趟下来都可以少比一次, 内层循环可以 -j
+  // (2) 高级版: 假设成立法, 如果已经排好序了, 后面就不需要再排了
+
+  var arr = [7, 6, 5, 4, 3, 2, 1];
+  // 外层控制趟数, 一趟可以比出一个最大值, 7个数, 比6趟即可
+  for (var j = 0; j < arr.length-1; j++) {
+    // 在每趟排列前, 先假设, 已经排好了
+    var flag = true;
+    
+    for (var i = 0; i < arr.length-1-j; i++) {
+      if (arr[i] > arr[i + 1]) {
+        var temp = arr[i];
+        arr[i] = arr[i + 1];
+        arr[i+1] = temp;
+        // 发生了交换, 说明没有排好
+        flag = false;
+      }
+    }
+    // 一趟下来, 如果一次交换都没有发生, flag值就是 true
+    if (flag) {
+      break; 
+    }
+  }
+  console.log(arr);
+
+</script>
+  
+</body>
+</html>

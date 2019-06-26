@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <script>
+
+    // 一开始: 6趟 * 每趟6次 = 36 次
+
+    // 优化中级版: 每趟都可以比出一个最大值, 可以少比一次
+    // 优化后: 6趟, 但是每趟可以少比一次, 6 + 5 + 4 + 3 + 2 + 1   21次
+    var arr = [7, 6, 5, 4, 3, 2, 1];   // 7个数
+    var count = 0;
+
+    // 外层 for 循环, 控制趟数, 7个数, 6趟即可
+    for (var j = 0; j < arr.length - 1; j++) {
+      // 一趟可以比出一个最大值
+      for (var i = 0; i < arr.length - 1 - j; i++) {
+        count++;
+
+        // 让 arr[i] 和 arr[i+1] 比较
+        if (arr[i] > arr[i + 1]) {
+          // 交换位置
+          var temp = arr[i];
+          arr[i] = arr[i + 1];
+          arr[i + 1] = temp;
+        }
+      }
+    }
+
+    console.log(arr);
+    console.log(count);
+
+  </script>
+
+</body>
+
+</html>
