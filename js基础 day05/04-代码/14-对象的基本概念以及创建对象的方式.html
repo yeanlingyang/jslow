@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    div {
+      /* 键值对 */
+      width: 200px;
+    }
+  
+  </style>
+</head>
+<body>
+
+<script>
+  
+  // js中的数组: 有序的值的集合;    ['张三', '李四']
+  // js中的对象: 无序的键值对的集合!!!
+
+  // 创建对象的第一种方式: 字面量     1  'abc'  true  undefined  null   []   {}
+  // var obj = {};  // 创建空对象
+
+  // 俊俊对象
+  // 特征: 年龄  性别  身高    体重
+  // 行为: 吃饭  看剧  敲代码  收手机  
+
+  // 键值对的集合, 多个键值对通过 , 隔开
+  var obj = {
+    // 描述特征 (对象的属性)
+    gender: '女',
+    age: 18,
+    height: 170,
+    weight: 100,
+    // 描述行为 (对象的方法 => 对象中的函数)
+    eat: function() {
+      console.log('会吃饭');
+    },
+    watchTv: function() {
+      console.log('会看剧');
+    }
+  };
+  console.log(obj);
+
+</script>
+  
+</body>
+</html>

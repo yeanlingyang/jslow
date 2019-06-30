@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 一个从未声明过的变量, 直接赋值, 那么就成为了隐式全局变量!! (将来要避免!!!)
+  // num = 10;
+  // console.log(num);
+
+  // function fn() {
+  //   num = 10;
+  //   console.log(num);   // 10
+  // }
+  // fn();
+  // console.log(num);   // 10
+
+
+
+  // function fn() {
+  //   console.log(num);  // 未声明 未赋值的一个变量, 报错了
+  //   num = 10;
+  //   console.log(num);  
+  // }
+  // fn();
+  // console.log(num);  
+
+
+  
+  // 1. 在script标签内, 在函数外声明的变量, 叫全局变量
+  // 2. 在函数内, 声明!! 的变量 叫局部变量
+
+  // 3. 一个从来没有声明过的变量, 如果直接赋值, 那么才是隐式全局变量!!!  (避免!)
+
+  // 变量一定要, 先声明 再使用
+
+  // 小 demo
+  // var num = 20;
+  // function fn() {
+  //   num = 30;
+  //   console.log(num);
+  // }
+  // fn();
+  // console.log(num);
+
+
+</script>
+  
+</body>
+</html>

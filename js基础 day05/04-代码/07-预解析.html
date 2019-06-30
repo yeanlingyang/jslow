@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 预解析, 虽然可以提升我们的声明, 但是我们开发时, 还是要先声明, 后使用!!!
+
+  // 预解析的核心点: 就是可以提升函数和变量的声明!!!
+  
+  // 预解析: 预先解析, 浏览器会先查看有多少的变量和函数
+  // 1. 所有的变量声明, 都会提升到最顶部, 只提升声明, 不提升赋值
+  // 2. 所有的函数声明, 都会提升到最顶部, 只提升声明, 不提升调用
+
+  // 补充说明:
+  // 1. 多个重名的 var 声明, 后面的 var 将被忽略
+  // 2. 多个重名的 函数声明, 后面的将前面会覆盖
+  // 3. 如果出现了同名的变量 和 函数, 函数优先,  函数的优先级 > 变量
+  //    函数的提升: 告诉浏览器有一个变量名, 其次变量的值是一个函数
+
+
+  // console.log(num);  // undefined
+  // var num = 123;
+  // console.log(num);  // 123
+
+
+  // console.log(123);
+  // fn();
+  // console.log(456);
+  
+  // function fn() {
+  //   console.log('嘻嘻');
+  // }
+
+
+  // var aa = 11;
+  // var aa = 22;
+  // var aa = 33;
+  // var aa = 44;
+
+
+  // function fn() {
+  //   console.log('嘎嘎');
+  // }
+  // fn();
+
+  // function fn() {
+  //   console.log('嘻嘻');
+  // }
+  // fn();
+
+  // function fn() {
+  //   console.log('嘿嘿');
+  // }
+  // fn();
+
+
+  // var a;
+  // // 告诉浏览器, 有一个变量是 a, 并且变量的值是一个函数
+  // function a () {
+  //   console.log(123);
+  // }
+
+
+  // 一定在开发中, 不要出现 函数名 和 变量名同名的情况!!!
+  // var a = 11;
+  // console.log(a); // 11
+
+  // function a () {
+  //   console.log(123);
+  // }
+  // a();
+
+
+</script>
+  
+</body>
+</html>

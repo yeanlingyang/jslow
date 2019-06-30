@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+  // 开发的时候, 注意规范: 函数的参数要一一对应
+  // function getSum(n1, n2) {
+  //   return n1 + n2;
+  // }
+
+  // 规范写法
+  // console.log( getSum(100, 200) );
+  // 1. 传递的参数, 如果少了, 没收接收到值的形参, 值就是 undefined
+  // console.log( getSum(100) );
+  // 2. 传递的参数, 如果多了, 多传的参数, 会被忽略
+  // console.log( getSum(100, 200, 300, 400) );
+
+
+  // 返回值的问题:
+  // 1. return的值, 就是函数的执行结果
+  // 2. return后面的代码, 不执行了! return 表示函数的结束!!!
+
+  function getSum(x, y) {
+    // ....
+    var sum = x + y;
+    return sum;
+    console.log('我是一句话, 我看打不打打印');
+  }
+  console.log(getSum(100, 200));
+
+
+</script>
+  
+</body>
+</html>

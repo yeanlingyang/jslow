@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  /* 
+    作用域: 变量起作用的区域
+    (1) 全局作用域
+        在script标签内, 在函数外的区域, 就是全局作用域
+        声明在全局作用域的变量, 就叫全局变量
+        特征: 全局变量在任何地方都可以使用!!!
+
+    (2) 局部作用域
+        函数内部的区域, 就是局部作用域
+        声明在函数内部的变量, 就叫局部变量
+        局部变量, 只在当前函数内可以使用, 出了函数, 就不能用了!!!
+  */
+
+
+
+  // 局部变量 和 局部作用域 
+  // 函数内部声明的变量, 只在函数内部可以用
+  // function fn () {
+  //   var num = 11;
+  //   console.log(num);  // 11
+  // }
+  // function fn2() {
+  //   console.log(num);
+  // }
+  // fn();
+  // fn2();
+  // console.log(num);  // 变量未声明 未赋值, 如果直接用, 报错
+
+
+  
+  // 全局作用域的全局变量, 在任何地方都可以使用
+  // var num = 11;
+
+  // function fn () {
+  //   console.log(num);  // 11
+  // }
+  // function fn2() {
+  //   console.log(num);  // 11
+  // }
+  // fn();
+  // fn2();
+  // console.log(num);  // 11
+
+
+</script>
+  
+</body>
+</html>

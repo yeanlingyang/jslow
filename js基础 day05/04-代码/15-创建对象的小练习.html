@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  // js对象: 无序的键值对的集合, 可以描述一个现实对象的特征和行为;
+
+  // 需求: 描述蔡徐坤
+  // 特征(对象的属性):
+  //   1. 姓名: 蔡徐坤
+  //   2. 性别: 男
+  //   3. 年龄: 21
+  //   4. 身高: 183cm
+  // 行为(对象的方法 => 对象中的函数):
+  //   1. 打篮球
+  //   2. 唱歌: 鸡太美; (只因你太美)
+
+  var obj = {
+    // 描述了特征: 对象的属性
+    name: '蔡徐坤',
+    gender: '男',
+    age: 21,
+    height: '183cm',
+    // 描述行为: 对象的方法
+    playBall: function() {
+      console.log('打篮球');
+    },
+    sing: function() {
+      console.log('鸡太美');
+    }
+  };
+  console.log(obj);
+
+
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+  // 点语法即可
+  var obj = {
+    // 描述了特征: 对象的属性
+    name: '蔡徐坤',
+    gender: '男',
+    age: 21,
+    height: '183cm',
+    // 描述行为: 对象的方法
+    playBall: function() {
+      console.log('打篮球');
+    },
+    sing: function() {
+      console.log('鸡太美');
+    }
+  };
+
+  // 取值:
+  // 语法: 对象名.属性名
+  //    (1) 有这个属性名, 返回对应值
+  //    (2) 如果没有这个属性名, 返回 undefined
+  // console.log(obj.name);
+  // console.log(obj.gender);
+  // console.log(obj.xxx);  // undefined
+
+  // //   对象名.方法名
+  // console.log(obj.sing);  // 打印整个函数, 函数不是用来打印的
+  // //   对象名.方法名()  => 方法的调用
+  // obj.sing();
+
+
+  // 赋值:
+  // 语法: 对象名.属性名 = '新的值'
+  //   (1) 如果有这个属性名, 覆盖
+  //   (2) 如果没有这个属性名, 新建一个属性并赋值
+  obj.height = '185cm';
+  console.log(obj);
+
+  obj.weight = '110';
+  console.log(obj);
+
+
+</script>
+  
+</body>
+</html>

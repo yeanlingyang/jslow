@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 预解析: 不好!! 会提升变量声明和函数的声明!! 让 js 写代码更随意了
+  // 开发规范: 先声明 后 使用, 就不会有任何问题!!!
+  // js 从随意 => 严格慢慢发展的
+
+  // 1. 函数在内部也会先进行预解析, 才会往下执行
+  // var num = 10;
+  // fn1();
+  // function fn1() {
+  //   console.log(num); // undefined
+  //   var num = 20;
+  //   console.log(num);  // 20
+  // }
+
+  //2. 
+  // var a = 18;
+  // function fn2() {
+  //   var b = 9;
+  //   console.log(a);  // 18
+  //   console.log(b);  // 9
+  // }
+  // fn2();
+
+
+  //3.
+  // function fn3() {
+  //   var a = b = c = 9;  // var a = 9; b = 9; c = 9;
+  //   console.log(a);
+  //   console.log(b);
+  //   console.log(c);
+  // }
+  // fn3();
+  // console.log(c);
+  // console.log(b);
+  // console.log(a);
+
+</script>
+  
+</body>
+</html>

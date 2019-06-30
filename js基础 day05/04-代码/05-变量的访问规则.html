@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 如果作用域内, 有这个变量, 直接用
+  // 如果没有, 才会往外面找(全局作用域)
+  
+  // 全局变量
+  // var num = 11;
+  // function fn() {
+  //   // 局部变量
+  //   var num = 22;
+  //   console.log(num); // 22
+  // }  
+  // fn();
+  // console.log(num);  // 11
+
+  // 在script标签内, 函数外 声明 的变量是全局变量, 特征: 在任何地方都可以使用
+  // 在函数内 声明 的变量才是局部变量, 特征: 只在当前函数内可以使用
+  // 变量的访问规则: 
+  // 1.如果自己有, 就用自己的改自己的
+  // 2.如果自己没有, 就用外面的, 改的也是外面的
+
+  var num = 11;
+
+  function fn() { 
+    console.log(num);  // 11
+    num = 22;
+    console.log(num); // 22
+  }
+  
+  fn();
+  console.log(num);  // 22
+
+
+</script>
+  
+</body>
+</html>

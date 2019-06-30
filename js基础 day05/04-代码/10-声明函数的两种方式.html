@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+
+  // 1. 函数声明式
+  //    可以先调用, 后声明!!!  (预解析, 会提升函数的声明)
+  // function fn() {
+  //   console.log('嘿嘿');
+  // }
+  // fn();
+
+
+  // 2. 函数表达式
+  //    只可以先声明赋值, 后调用!!!  下面的写法相对严格
+  var fn = function() {
+    console.log('哈哈');
+  };
+  fn();
+
+
+  
+
+
+</script>
+</body>
+</html>

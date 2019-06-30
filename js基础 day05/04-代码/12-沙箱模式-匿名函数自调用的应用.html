@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  // 沙箱  沙盘  沙盒   沙盒的内容部分不会影响到外部
+
+  // 沙箱模式: 匿名函数自调用 => 可以用于解决 全局变量 污染问题!!!
+
+  // 由于全局变量, 可以在任何地方都可以访问, 所以不能乱用!!!
+
+  var company = '传智播客';
+
+  // 小张
+  (function() {
+    var num = 123;
+    var a = 11;
+    console.log(a);
+
+    function b() {
+      console.log('bbbb');
+    }
+    b();
+  })();
+
+
+  // 小王
+  (function() {
+    var num = 456;
+    var b = 22;
+    console.log(b);
+
+    function a() {
+      console.log('aaaa');
+    }
+    a();
+  })();
+
+  // 小结: 将来大家开发代码, 一般都会用函数自调用包裹起来
+  (function() {
+    // 请填入你的代码
+    var num1;
+    var num2;
+    var num3;
+    var max;
+  })();
+
+
+
+
+
+</script>
+  
+</body>
+</html>

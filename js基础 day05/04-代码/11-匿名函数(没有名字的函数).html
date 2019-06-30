@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+
+  // 匿名函数(没有名字的函数), 不能直接使用
+  // 使用场景:
+  // 1. 函数表达式
+  // var fn = function () {
+  //   console.log(123);
+  // };
+  // fn();
+  // fn();
+  // fn();
+
+
+  // 2. 匿名函数自调用(自执行)
+
+  // 函数自调用, 直接自调用, 会报错, 可以给整个函数包一个(), 包成了一个整体, 就可以调用了
+  // (function fn() {
+  //   console.log(123);
+  // })();
+
+  (function() {
+    console.log('哈哈')
+  })();
+
+</script>
+  
+</body>
+</html>

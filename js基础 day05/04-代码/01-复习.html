@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  /* 
+    函数: 可以封装一段重复的代码, 可以一次声明, 多次调用!!!
+
+    函数的声明 和 调用:
+      声明:  function 函数名(x, y) { .... }
+      调用:  函数名(1, 2);
+  
+    函数的参数
+      形参: 形式参数, 定义在 函数声明时, 函数名()中的参数
+            默认没有具体的值或者类型, 只在函数调用的的时候, 才会有值和类型
+            作用: 占位置
+
+      实参: 实际参数, 在函数调用时, 传递值的参数
+            有具体的值或者类型
+            作用: 在函数调用时, 将值传递给 形参!!!
+
+    函数的返回值:
+      如果希望函数的调用, 有结果, 就需要 return 返回
+      return 的值, 就是函数调用的结果!!
+
+    函数的三要素:
+      函数名
+      参数
+      返回值
+  */
+
+  function getSum(x, y) {
+    // return x + y;
+    return 1;
+  }
+  var result = getSum(3, 5);
+  console.log(result);
+
+
+
+</script>
+  
+</body>
+</html>

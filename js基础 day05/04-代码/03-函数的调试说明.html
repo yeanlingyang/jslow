@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+  // 1. 函数可以在内部调用函数的
+  // 2. 学习如何给函数打断点
+
+  // F8  向后执行到下一个断点处
+  // F10 让代码往下一步执行, 如果遇到了函数调用, 会跳过函数的执行过程, 直接看结果
+  // F11 让代码往下一步执行, 如果遇到了函数调用, 会进入函数一步一步执行
+  // shift + F11  跳出函数的执行  (将当前函数调用的剩余代码全部执行完, 直接看结果)
+
+  function study() {
+    console.log('早上8点开始学习');
+
+    play();
+
+    console.log('晚上10点结束学习');
+  }
+
+  function play() {
+    console.log('早上八点半开始玩手机');
+    console.log('晚上九点半结束玩手机');
+  }
+
+  study();
+
+</script>
+</body>
+</html>
