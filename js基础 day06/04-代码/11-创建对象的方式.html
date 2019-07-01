@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 创建单个对象  (都是Object类型)
+  // 1. var obj = {};  var obj = {name: 'pp', age: 18};
+  // 2. var obj = new Object();  var obj = new Object({name: 'pp', age: 18});
+
+
+  // 批量创建对象
+  // 1. 工厂函数: 只是将创建对象的代码进行了封装, 就是一个函数
+  //    创建出来的对象, 是通过字面量创建的, 所以类型还是 Object 类型的, 没有具体的类型
+  // function createPerson() {
+  //   var obj = {};
+  //   return obj;
+  // }
+  // var p = createPerson();
+
+  // 2. 自定义构造函数的方式: 需要结合 new 一起使用, 让对象有具体的类型
+  function Teacher() {
+
+  }
+  // new的四件事
+  // 1. 创建一个新对象, 指定类型
+  // 2. 让构造函数的this指向新的对象
+  // 3. 执行构造函数, 给对象添加属性和方法
+  // 4. 返回新对象
+  var teacher = new Teacher();
+  console.log(teacher);
+
+
+</script>
+  
+</body>
+</html>

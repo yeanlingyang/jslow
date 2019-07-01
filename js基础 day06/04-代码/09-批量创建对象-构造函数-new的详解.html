@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+<script>
+  // 构造函数:
+  // 1. 就是一个函数
+  // 2. 首字母大写
+  // 3. js中内置了一些构造函数, Object  Array
+  // 4. 构造函数可以自定义
+
+  // 使用构造函数创建对象
+  // 1. 自定义声明一个构造函数
+  // 2. 结合 new 一起使用
+
+  // 构造函数的作用: 给新建的对象, 添加属性和方法 (实例化对象)
+  function Person(name, age) {
+    // this = 新创建的对象 (便于理解)
+
+    this.name = name;
+    this.age = age;
+
+    this.say = function() {
+      console.log('大家好, 才是真的好');
+    }
+    // return this;
+  }
+  // new作用: 创建对象
+  // 1. 会新建一个对象, 指定对象的类型
+  // 2. 让构造函数的 this, 指向新创建的对象
+  // 3. 执行构造函数
+  // 4. 将新创建的对象返回
+  var zs = new Person('张三', 20); 
+  console.log(zs);
+
+  var ls = new Person('李四', 25);
+  console.log(ls);
+
+
+  function Teacher(name, age) {
+    // this 指向了新创建的对象
+    this.name = name;
+    this.age = age;
+  }
+  var teacher = new Teacher('鹏鹏', 18);
+  var teacher2 = new Teacher('俊俊', 18);
+  console.log(teacher);
+  console.log(teacher2);
+
+
+</script>
+</body>
+</html>

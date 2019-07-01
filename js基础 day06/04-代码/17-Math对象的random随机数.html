@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // Math.random(); 取随机数, [0, 1)  可以取到0, 取不到1
+  // 范围: 0~0.999999
+
+  // console.log(Math.random());
+
+  // 平均概率的, 随机一个整数, 范围0-2,  0 1 2  随机一个整数范围0~N,  Math.random()*(N+1)
+ 
+  // 范围: 0~2.99999   公平公正
+  // 0~0.999999   0
+  // 1~1.999999   1
+  // 2~2.999999   2
+  // console.log(Math.floor( Math.random() * 3 ));
+
+
+  // 范围: 0~ -2.999999  公平公正
+  // 0  ~ -0.99999    0     
+  // -1 ~ -1.99999    -1    
+  // -2 ~ -2.99999    -2    
+  // console.log(Math.ceil( Math.random() * -3 ));
+
+
+  // 公式: 求一个整数范围 0~N,  parseInt(Math.random() * (N+1))
+  // console.log(parseInt(Math.random() * 3));;
+  // console.log(parseInt(Math.random() * -3));;
+
+</script>
+  
+</body>
+</html>

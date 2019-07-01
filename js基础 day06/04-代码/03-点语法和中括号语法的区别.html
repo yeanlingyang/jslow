@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+  obj.a    访问的是 名字叫 a 的属性
+  obj.key  访问的是 名字叫 key 的属性
+
+  var b = 'c';
+  obj.b    访问的是  名字叫 b 的属性
+
+
+  obj['a']  访问的是 名字叫 a 的属性
+  obj['key'] 访问的是 名字叫 key 的属性
+
+  var b = 'c'
+  obj[b]   访问的是 名字叫 c 的属性
+
+
+<script>
+  // 点语法:     对象名.属性名      简洁方便, 不支持变量(不管变量)
+  // 中括号语法: 对象名['属性名']   灵活, 可以支持变量
+
+  // 只要访问对象属性时, 需要用到变量, 只能用中括号语法
+
+  // var obj = {
+  //   name: '小兰',
+  //   age: 2,
+  //   desc: '还是个孩子'
+  // };
+  // console.log(obj.name);  // 小兰     访问的是 名字叫 name 的车厢
+  // console.log(obj.age);   // 2        访问的是 名字叫 age 的车厢
+
+  // var key = 'desc';
+  // var a = 'bb';
+  // var c = 'dd';
+  // console.log(obj.key);   // undefined 访问的是 名字叫 key 的车厢
+  // console.log(obj.a);     // undefined 访问的是 名字叫 a 的车厢
+
+
+
+  var obj = {
+    name: '鹏鹏',
+    age: 18,
+    desc: '帅!!'
+  };
+  console.log(obj['name']);  // 鹏鹏
+  console.log(obj['age']);   // 18
+
+  var key = 'desc';
+  console.log(obj[key]); // obj['desc']  访问的是 名字叫 desc 的车厢!!!
+
+
+
+</script>
+  
+</body>
+</html>

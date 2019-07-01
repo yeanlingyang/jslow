@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 1. 点语法: 对象名.属性名    简洁方便
+      // 对象的取值: 对象名.属性名
+      // 对象的赋值: 对象名.属性名 = "新的值"
+  
+  // 2. 中括号语法: 对象名['属性名']  支持字符串 或 变量, 更加的灵活
+      // 对象的取值: 对象名['属性名']
+      // 对象的赋值: 对象名['属性名'] = "新的值"
+
+
+  // var obj = {
+  //   name: '老花花',
+  //   age: 34,
+  //   desc: '觉得自己很美!!'
+  // };
+  // console.log(obj.name); // 老花花
+  // console.log(obj.age);  // 34
+  // console.log(obj.gender); // undefined
+
+  // obj.age = 20;
+  // console.log(obj);
+
+  // var arr = ['张三', '李四'];
+  // console.log(arr[0]);
+
+  var obj = {
+    name: '小丽丽',
+    age: 18,
+    desc: '确实很美'
+  };
+  console.log(obj['name']);  // 小丽丽   => 相当于 obj.name
+  console.log(obj['age']);   // 18      => 相当于 obj.age
+  console.log(obj['gender']); // undefined  => 相当于 obj.gender
+
+  var key = 'weight';
+  obj[key] = 100;  // 先解析 key 这个变量, => obj['weight'] = 100
+  console.log(obj);
+
+</script>
+  
+</body>
+</html>

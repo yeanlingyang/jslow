@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+
+  // 需求: 将obj2的所有属性, 添加到 obj 中去   (js高级: 混入式继承)
+  var obj = {
+    name: '张三',
+    age: 32
+  };
+  var obj2 = {
+    money: 10000,
+    car: '玛莎拉蒂',
+    house: '新疆别墅海景房',
+    father: '达赖喇嘛, 新疆首富'
+  };
+
+  // 不好! 通用性不好
+  // obj.money = obj2.money;
+  // obj.car = obj2.car;
+
+  for (var k in obj2) {
+    // k 就是键  money
+    // obj2[k] 值
+    obj[k] = obj2[k];
+  }
+
+  console.log(obj);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  // var arr = [];
+  // var newArr = arr;
+  // newArr.push('张三');
+  // console.log(arr);
+
+  // 值类型, 存储在变量中, 存的是值本身
+  // 引用类型, 存储在变量中, 存的是内存地址
+
+
+  //面试题1 : 
+  // a -> x
+  // function fn(a, b) {
+  //   // var a = 10;
+  //   // var b = 20;
+  //   // 函数的参数 其实就是函数内部的局部变量
+  //   a = a + 1;  // 11
+  //   b = b + 1;  // 21
+  //   console.log(a); // 11
+  //   console.log(b); // 21
+  // }
+
+  // var x = 10;
+  // var y = 20;
+  // fn(x, y);
+  // console.log(x); // 10
+  // console.log(y); // 20
+
+
+
+  //面试题2 : 
+  var p = {
+    name:"zs",
+    age:18
+  }
+  function fn(person) {
+    person.name = 'ls';
+    person = {
+      name: 'ww'
+    };
+    console.log(person.name);   // ww
+  }
+  fn(p);
+  console.log(p.name);  // ls
+
+
+
+</script>
+  
+</body>
+</html>

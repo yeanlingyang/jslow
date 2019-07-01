@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  // 批量创建 狗狗对象
+  // 特征: 名字  年纪   性别  爱好  
+  // 行为: 说话  吃饭
+
+  function Dog(name, age, gender, hobby) {
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.hobby = hobby;
+
+    this.say = function() {
+      console.log('二百五'); // 啊呜呜
+    }
+    this.eat = function() {
+      console.log('会吃狗粮');
+    }
+  }
+  // new做的四件事情(必须记忆!!):
+  // 1. 新创建一个对象, 指定了类型
+  // 2. 让构造函数的this, 指向了新创建的对象  this=新对象
+  // 3. 执行构造函数, 给新建的对象, 添加属性和方法
+  // 4. 返回新创建的对象
+  var erHa = new Dog("二哈", 3, '公', '拆家');
+  console.log(erHa);
+
+  var td = new Dog('泰日天', 2, '母', '日天');
+  console.log(td);
+
+
+  function Girl(name, age) {
+    this.name = name;
+    this.age = age;
+
+    this.cook = function() {
+      console.log('会烧饭');
+    };
+    this.sing = function() {
+      console.log('会唱歌');
+    }
+  }
+  var girl = new Girl('小美', 18);
+  console.log(girl);
+  girl.sing();
+
+
+</script>
+  
+</body>
+</html>

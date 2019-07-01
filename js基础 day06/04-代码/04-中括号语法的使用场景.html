@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+<script>
+
+  // 给对象添加属性
+  // { }
+  // { n1: 1, n2: 2, n3: 3, n4: 4 ...... n10: 10 } 
+
+  var obj = {};
+
+  for (var i = 1; i <= 10; i++) {
+    // obj.ni = i;    // 找名字 是 ni 的属性, 点语法不支持变量
+
+    var str = 'n' + i;  // n1.. n2...
+    obj[str] = i;    // 只有 [] 语法支持变量
+  }
+  console.log(obj);
+
+
+</script>
+</body>
+</html>

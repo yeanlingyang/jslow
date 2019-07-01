@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+  // 对象的遍历: 访问对象的所有属性!!
+  /* 
+    固定语法:
+      for (var k in obj) {
+
+      }
+      k 就是 键
+      obj[k] 就是值
+  */
+
+  // var obj2 = {
+  //   name: '李逵',
+  //   age: 20,
+  //   desc: '大汉'
+  // };
+  // for (var key in obj2) {
+  //   // key 就是键, 属性名   age
+  //   console.log(key);
+    
+  //   // console.log(obj2.key);  访问的是 obj2 的名字叫 key 的属性, 返回 undefined
+  //   console.log(obj2[key]);   // 中括号语法, 支持变量!!!
+  // }
+
+
+  var obj = {
+    name: '宋江',
+    age: 40,
+    desc: '及时雨, 老大!'
+  };
+  for (var k in obj) {
+    console.log(k); // 键
+    console.log(obj[k]);  // 值
+  }
+
+</script>
+  
+</body>
+</html>

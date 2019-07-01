@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  /* 
+    预解析: 预先解析, 将 变量的声明 函数的声明 提升
+    注意点:
+      1. 对于变量, 只提升声明, 不提升赋值
+      2. 对于函数, 只提升声明, 不提升调用
+      3. 出现多个同名 var, 后面的将被忽略
+      4. 出现多个同名 函数, 后面的会覆盖前面的
+      5. 如果 函数 和 var 同名, 函数优先级更高!!!
+
+    规范: 先声明 后使用
+
+    对象: 无序的键值对的集合
+
+    创建对象的两种方式:
+      1. 字面量
+          var obj = {};
+          var obj = { name: 'pp', age: 18 };
+      2. 构造函数
+          var obj = new Object();
+          var obj = new Object({ name: 'pp', age: 18 });
+
+    对象的取值和赋值
+      对象的取值: 对象名.属性名
+      对象的赋值: 对象名.属性名 = "新的值"
+  */
+
+  // var num;
+  // console.log(num);  // undefined
+  // num = 11;
+  // console.log(num);  // 11
+
+  // fn();
+  // function fn() {
+  //   console.log('嘎嘎');
+  // }
+
+
+</script>
+  
+</body>
+</html>

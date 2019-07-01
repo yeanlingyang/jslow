@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+<script>
+  // 公式: parseInt(Math.random() * (N+1))  求0~N的随机整数
+
+  // 随机颜色  rgb(255, 255, 255);  颜色数值0~255
+
+  var colorA = parseInt(Math.random() * 256);
+  var colorB = parseInt(Math.random() * 256);
+  var colorC = parseInt(Math.random() * 256);
+  var str = "rgb(" + colorA + "," + colorB + "," + colorC + ")";
+
+  // 随机换肤效果, 给body随机设置背景色
+  document.body.style.backgroundColor = str;
+
+</script>
+  
+</body>
+</html>
