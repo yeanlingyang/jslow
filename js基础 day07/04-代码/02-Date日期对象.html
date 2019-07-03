@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  // js中提供的 Date 构造函数, 可以创建日期对象
+
+  // 1. 如何创建日期对象
+  // var now = new Date();   // 构造函数不传参, 创建的是当前时间
+  // console.log(now);
+  // var date = new Date('2019-4-22 16:00:00'); // 构造函数传日期字符串, 指定具体的日期
+  // console.log(date);
+
+
+  // 2. 日期格式化  (不用)  一般日期格式都是自定义的  xx年xx月xx日 ...
+  // var now = new Date();  // 当前时间
+  // console.log(now.toString());  // 让日期以标准化的日期字符串格式输出
+  // console.log(now.toLocaleString()); // 本地化日期字符串格式输出
+  // console.log(now.toLocaleDateString()); // 只显示日期
+  // console.log(now.toLocaleTimeString()); // 只显示时间
+
+  
+  // 3. 日期格式的自定义, xx年xx月xx日 获取日期里面的各个组成部分
+  // 封装一个函数, 专门给小于 10 的数, 前面加上 0,     3 => "03"
+  function addZero( n ) {
+    if (n < 10) {
+      return '0' + n;
+    }
+    else {
+      return n;
+    }
+  }
+
+  var now = new Date(); // 当前时间
+
+  // 获取年 getFullYear
+  var year = now.getFullYear();
+
+  // 获取月 getMonth, 月从0开始, 范围0-11
+  var month = now.getMonth() + 1;
+  month = addZero(month);
+
+  // 获取日 getDate
+  // 获取一周中的第几天, getDay, 范围0-6, 0周日, 1周1
+  var day = now.getDate();
+
+  // 时 getHours
+  var hours = now.getHours();
+
+  // 分 getMinutes
+  var minutes = now.getMinutes();
+
+  // 秒 getSeconds
+  var seconds = now.getSeconds();
+  seconds = addZero(seconds);
+
+  // now.getMilliseconds 毫秒  0-1000
+
+  // console.log(year, month, day, hours, minutes, seconds);
+  var str = year + '年' + month + '月' + day + '日, ' + hours + '时' + minutes + '分' + seconds + '秒';
+  console.log(str);
+
+  /* 
+    小结:
+      1. 如何创建日期对象
+         (1) var now = new Date();  创建当前时间
+         (2) var date = new Date('日期字符串');  指定具体哪个日期
+      
+      2. 日期格式化 (不用记)
+         var now = new Date();
+         now.toString();  // 标准化的输出
+         now.toLocaleString(); // 本地化的输出, 可读性会更高一些
+
+      3. 进行自定义日期格式
+         获取日期各个组成部分
+
+         年  getFullYear
+
+         月  getMonth   0-11
+
+         日  getDate
+
+         时  getHours
+
+         分  getMinutes
+
+         秒  getSeconds
+
+         星期 getDay   0-6
+  
+  */
+
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 替换 str.replace('aa', 'bb');  将str字符串中的第一个 aa 替换成 bb
+  // 会返回替换后的结果
+
+  // var words = '你妹啊, 真坑啊, 小学生吧!! 你妹的';
+  // words = words.replace('你妹', '**');
+  // words = words.replace('你妹', '**');
+  // console.log(words);
+
+  // 想要全部替换, 需要用到正则
+  var words = '你妹啊, 真坑啊, 小学生吧!! 你妹的';
+  // g global 全局替换
+  words = words.replace(/你妹/g, '**');
+  console.log(words);
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  
+
+<script>
+
+  // 简单数据类型: number  string  boolean   undefined  null
+  // 简单数据类型(值类型): 没有属性和方法, 只有值
+
+  // 复杂数据类型: Function Array  Object
+  // 复杂数据类型: 可以有多个属性和方法的
+
+  // 在js内部, 对于除了 undefined 和 null 的简单数据类型, 都提供了一个对应的复杂数据类型
+  // var num = new Number(123);
+  // var str = new String('abc');
+  // var flag = new Boolean(true);
+
+
+  // 基本包装类型: (解释了简单数据类型, 为什么可以直接使用属性和方法)
+  // 1. 在js中, 如果简单数据类型, 在访问复杂数据类型的属性或方法时
+  // 2. 为了方便, 自动将简单数据类型, 包装成复杂数据类型, 然后获取对应的值
+  // 3. 最后还会将值变回简单数据类型
+
+  // var str = 'abc';
+  // // var str = new String('abc');  // String 对象
+  // // console.log(str);
+  // console.log(str.length);
+  // console.log(str);
+
+  var num = 11;
+  // 基本包装类型
+  // 在调用toString方法前, 会自动将简单数据类型包装成复杂数据类型, 获取值
+  // 最后还会变回来
+  console.log(num.toString());  // 底层, 其实先 new Number(11);
+  console.log(num);
+</script>
+
+</body>
+</html>

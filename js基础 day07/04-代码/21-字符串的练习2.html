@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  var str = 'my_name_is_jim_green';
+  // 需求: 变成驼峰命名  myNameIsJimGreen
+
+  var arr = str.split('_');
+
+  for (var i = 1; i < arr.length; i++) {
+    // 需要将首字母大写
+    arr[i] = arr[i].slice(0,1).toUpperCase() + arr[i].slice(1);
+  }
+
+  str = arr.join("");
+  console.log(str);
+
+</script>
+  
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+
+<script>
+  // str1.concat(str2); 将字符串进行拼接, 返回新的字符串
+  // var str1 = 'abc';
+  // var str2 = 'def';
+  // // console.log(str1 + str2);
+  // var newStr = str1.concat(str2);
+  // console.log(newStr);
+
+
+  // 字符串截取
+  // 1. slice(begin, end);  从begin开始截取, 截取到end截取, 包括begin, 不包括end
+  // 2. substring(begin, end); 不用记 从begin开始截取, 截取到end截取, 包括begin, 不包括end
+  // 3. substr(begin, length); 从begin开始截取, 截取length 个
+
+  var str = 'abcdefg';
+  console.log(str.slice(1, 3));  // bc
+  console.log(str.substring(1, 3)); // bc
+  console.log(str.substr(1, 3));   // bcd
+
+
+</script>
+  
+</body>
+</html>

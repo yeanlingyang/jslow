@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+
+  // 一般的日期输出, 都是字符串格式
+
+
+  // 时间戳: 就是数字格式的日期, 便于运算, 一般用于求时间差
+  // 时间戳: 距离 1970年 1月1日 0时0分0秒, 所过去的毫秒数
+  // var now = new Date();
+  // console.log(+now);
+
+  // 应用: 
+  //   (1) 统计一段代码的执行时间  (性能优化)
+  //   (2) 用于秒杀倒计时
+
+
+  // var begin = new Date(); 
+  // var sum = 0;
+  // for (var i = 1; i < 100000000; i++) {
+  //   sum += i;
+  // }
+  // var end = new Date();
+  // console.log(sum);
+  // console.log(end - begin);
+
+  
+  // 距离下课还有多久
+  var now = new Date(); // 当前时间
+  var future = new Date("2019-4-22 18:00:00");
+
+  var time = parseInt((future - now) / 1000);  // 秒数
+
+  // 将秒数转换成 时 分 秒
+  // 时,  1小时 = 3600秒   4000 1小时多一点
+  var hours = parseInt(time / 3600);
+
+  // 分,  1分钟 = 60秒, 先求总的分钟数, 对60取余数, 因为满60的进位了
+  var minutes = parseInt(time / 60) % 60;
+
+  // 秒,  70秒 => 1分钟10秒, 超过60的都进位了
+  var seconds = time % 60;
+
+  // console.log(time);
+  // console.log(hours, minutes, seconds);
+  var str = "距离下课还有: " + hours + '时' + minutes + '分' + seconds + '秒';
+  document.write(str);
+
+  /* 
+    1. 如何创建日期对象
+       (1) var now = new Date();
+       (2) var date = new Date('日期字符串')
+       其他:
+           var date = new Date(2019, 3, 22, 0, 0, 0);  // 年月日时分秒, 月0-11
+           var date = new Date(1555862400000);   // 时间戳
+    
+    2. 自定义日期格式化, 获取日期的各个组成部分
+
+
+    3. 时间戳, 数字格式的一个日期, 便于运算
+       应用:
+         (1) 统计代码的执行时间
+         (2) 倒计时
+  */
+
+
+</script>
+  
+</body>
+</html>
